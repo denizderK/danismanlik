@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+*{box-sizing: border-box;font-family: 'Rubik', sans-serif;}
+body{position: relative;font-family: 'Noto Sans', sans-serif;padding: 0 !important;margin: 0 !important;}
+a{text-decoration: none;}
+.whatsapp{position: fixed;bottom:25px;right: 25px;z-index: 100;}
+.main{position: relative;background-color: #ff700a;}
+.main .social-m{position: absolute;top: 30px;left: 30px;}
+.logo-picture{width: 180px;height: 120px;} 
+.navbar ul li{padding-left: 25px;}
+.socialmedia{background: rgb(35, 154, 35);}
+.main .social-m .fa-brands{color: #000;padding-top: 15px;}
+.main-table-img{box-shadow: 0 15px 16px 0 rgba(18, 19, 18, 0.24), 0 17px 50px 0 rgba(12, 12, 12, 0.19) ;border-radius: 15% 0 15% 0;}
+.main-table-pencil{box-shadow: 0 15px 16px 0 rgba(18, 19, 18, 0.24), 0 17px 50px 0 rgba(12, 12, 12, 0.19) ;border-radius: 15% 0 15% 0;}
+.consultancy{position: relative;}
+.contact-header{text-align: center;}
+.contact-header button{border-radius: 15% 0 15% 0;line-height: 25px;}
+.contact-header button:hover, .contact-header button:focus{box-shadow: 0 15px 16px 0 rgba(114, 224, 99, 0.24), 0 17px 50px 0 rgba(85, 239, 103, 0.19);}
+.consultancy-message{position: absolute;left: 0;bottom: 5%;text-align: center;}
+.consultancy-message h2{font-size: 3em;}
+.consultancy-message button{background-color:  rgb(35, 154, 35);font-weight: 800;font-size: 2.3rem;}
+.consultancy-message button a{margin-left: 0;}
+/* .main-table{background: url(../../images/masa2.jpg) no-repeat;background-size: cover;} */
+.contact-btn button{background: rgb(35, 154, 35);font-size: 1.1rem;}
+/* .contact-btn button:hover a{opacity: 1;} */
+.contact-btn button:hover{color: #fff;background:rgb(37, 228, 69);}
+
+.different-life{font-style: italic;font-size: 2.5rem;}
+.director{margin-top: 150px;padding-bottom: 100px;}
+/* .director img{box-shadow: 0 15px 16px 0 rgba(18, 19, 18, 0.24), 0 17px 50px 0 rgba(12, 12, 12, 0.19) ;border-radius: 0 15% 15% 0;} */
+.director-per{background:#ea4335;padding: 30px;color: #fff;}
+.director .our-team{padding-top: 50px;}
+
+.director img.akdere{overflow: hidden;transition: .5s ease-in-out}
+.director img.akdere:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+     transform: scale(1.1); 
+     opacity: .5;
+    }
+    /* .search-icon{position: absolute;left:-5px;top:50%;
+        border-radius: 50%;border:solid 1px;padding: 4px;background-color: #fff;opacity: 0;transition: all .5s ease-in;z-index: 33;
+        }
+        .search-icon:hover{background-color: #cf5053;} */
+.search-icon{opacity: 0;position: absolute;top: 50%;left: 50%;transition: all .5s ease-in;z-index: 33;}
+.team-image{overflow: hidden;border-radius: 10px;position: relative;}
+.team-image:hover .search-icon{opacity: 1;}
+.team-member img{border-radius: 10px;}
+.consultancy-produc{background:#34a853;padding-bottom: 80px;color: #fff;}
+.consultancy-produc img{border:1px solid;border-radius: 15px;transition:opacity .5s ease-in-out}
+.consultancy-produc img:hover{opacity:.5;}
+.consultancy-produc p{font-size: 1.5rem;text-align: center;margin: 30px;}
+.footer-bg{margin-top: 150px;background-color: #29bdd6;color: #fff;}
+.footer-bg ul li{list-style-type: none;}
+.footer-contact a{color: #000;}
+.footer-end{background-color: #333333;}
+.footer-end a{color: #fff;}
+.mt-150{margin-top: 110px;}
+.baslik{font-size: 3rem;font-weight: bold;}
+
+.about-consult-img{border-radius: 10px;}
+.about-img img{max-height: 550px;}
+.about-img{position: relative;top: -670px;left: 500px;z-index: -1;}
+.about-director{width: 100px;height: 150px;border: solid 1px;border-radius: 50%;}
+.experience{border: solid 1px rgb(243, 242, 242);box-shadow: 2px 3px 10px #bbb8b8;width: 150px;padding: 10px;}
+ 
+
+@media screen and (max-width:576px) {
+    .main .container, .consultancy .container, .insta .container{padding: 0;margin: 0;}
+    .consultancy h2{font-size: 1.2rem;}  
+    .different-life{font-size: 1.2rem;} 
+    .consultancy-produc p{font-size: 1.1rem;margin: 0 auto;}
+    .about-our{align-items: center;}
+    .about-our h4{font-size: 2rem !important;}     /* */
+    .youtube-video{max-width: 350px;}
+    .slider-message{display: none;}
+    .director{margin-top: 50px;margin-bottom: 30px;padding-bottom: 20px;}
+    .imza{width: 200px;height: 100px;}
+    .mt-150{margin-top: 50px;}
+    .footer-bg{margin-top: 50px;}
+}
+
+
+@media screen and (min-width:577px) and (max-width:767px) {
+    .main .container, .consultancy .container, .insta .container{padding: 0;margin: 0;}
+    .consultancy h2{font-size: 1.5rem;} 
+    .consultancy-message p{font-size:1.5rem ;} 
+    .different-life{font-size: 1.2rem;}
+    .slider-message{display: none;}
+    .consultancy-message h2{-webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;}
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .consultancy h2{font-size: 1.5rem;} 
+    .consultancy-message p{font-size:1.5rem ;}  
+    .different-life{font-size: 1.5rem;}  
+    .slider-message{width: 200px;font-size: 0.8rem;line-height: 35px;padding: 10px;}
+    .consultancy-message h2{-webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;}
+}
+@media screen and (min-width:991px) and (max-width:1200px) {
+    .consultancy h2{font-size: 1.8rem;} 
+    .consultancy-message p{font-size:1.8rem ;}   
+}

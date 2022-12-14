@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT DANIŞMANLIK </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="icon" href="images/favicon.ico" type="image/png"/>
+<meta name="description" content="psikolojik danışmanlık ve rehberlik hizmeti sağlıklı bir yaşam ve dengeli bir hayat okulda da başarılı ve verimli bir öğrencilik süreci geçirmek için elzemdir ülkemizde bu hizmetin yaygınlaşması göstermektedir ki geç yada yetişkin her bireyin bir danışman tarafından olumlu yönde desteklenmesi bir ihtiyaç haline gelmiştir bozulan aile ve toplum yapısı göz önünde bulundurulduğunda bu yadsınamaz bir gerçeklik olarak karşımızda durmaktadır "/> <!--En fazla 155 karakter en az70 karakter olan düzgün ve anlamlı bir cümledir-->
+<link rel="stylesheet" href="assets/css/animate.css">
+<link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+<style>
+
+       #slider{position: relative;}
+       #slider ul{list-style-type: none;padding: 0;}
+       #slider ul li.slide{display: none;padding: 0;margin: 0;}
+       #slider ul li.slide.active{display: block !important;}
+       a.previous, a.next{position: absolute;top: 45%;width: 70px;height: 70px;text-align: center;background-color: rgba(0,0,0,0.4);
+      color: white;transition: .4s ease-in-out;border-radius: 50%;padding-top: 18px;font-size: 1.5rem;}
+      a.previous:hover, a.next:hover{background-color: rgba(0,0,0,0.8);}
+      a.previous{left: 40px;} 
+      a.next{right: 20px;}
+      .slider-message{position: absolute;top: 15%;left: 5%; text-align: center;background-color: rgba(0,0,0,0.5);font-size: 1.8rem;font-weight: bold;width: 250px;padding: 30px 40px;border-radius: 10px;color: #fff;}
+      /*fading animation*/
+      .fadeEffect {animation-name: fade;animation-duration: 1.5s;}
+      @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+      }
+      @media screen and (max-width:767px){
+  a.previous,a.next{width: 40px; height:40px;font-size: 0.8rem;padding-top:10px;top:30%;}
+}
+
+</style>
+
+</head>
+<body>
+    <header class="main">   
+       <nav class="navbar navbar-expand-lg text-white">
+            <div class="container-fluid">
+              <div class="logo-picture">
+                 <a class="navbar-brand" href="index.html"><img src="images/SiyahBeyaz.png" alt="akdere logo" class="img-fluid w-100"></a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse fw-bold fs-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#director-1">Hakkımızda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#consultancy-1">Rehberlik</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">İletişim</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+    </header>
+       <!-- header bitti -->
+      <article class="insta">
+       <div class="instagram-s animated fadeInLeft">            <!-- İNSTAGRAM YÖNLENDİRMESİ-->
+
+            <div class="d-flex justify-content-between align-items-center socialmedia px-3">
+     
+              <p class="text-white fw-bold pt-3"> Bizi Instagram'da takip etmek istermisiniz?</p>
+          
+              <div>
+                <a href="https://instagram.com" target="_blank"><button class="btn btn-outline-light border-1">EVET <i class="fa-solid fa-angles-right"></i></button> </a>
+              </div>
+        
+            </div>
+      </div>
+    </article>
+    <article class="whatsapp"><a href="https://wa.me/905395080068" target="_blank"><img src="images/whatsapp.png" alt="whatsapp" width="50px" height="50px" class="rounded-2"></a></article>
+
+      <!-- slider show -->
+
+    <div id="slider">
+      <ul>
+        <li class="slide fadeEffect active"><img src="images/slider1.jpg" alt="01" class="img-fluid w-100"></li>  
+        <li class="slide fadeEffect"><img src="images/slider2.jpg" alt="03" class="img-fluid w-100"></li>
+         </ul>
+      <a href="#" onclick="previousSlide()" class="previous"><i class="fa-solid fa-chevron-left "></i></a>
+      <a href="#" onclick="nextSlide()" class="next"><i class="fa-solid fa-chevron-right "></i></a>
+      <div class="slider-message">
+        <p>Kaliteli rehberlik ve danışmanlık<br> bir tık kadar yakın</p>
+        <div class="contact-btn text-center mt-2 mt-lg-5"><button type="button" class="btn  text-center pt-sm-1  p-2 px-3"><a href="https://wa.me/905395080068" target="_blank" class="text-white">İletişim</a></button></div>
+      </div>
+    </div>
+ 
+    <section class="main-table pt-2 pt-md-5 mb-5 ">
+      <div class="container">
+        <div class="row mb-5">
+      <div class="col-md-7 typestherapy pt-5 fs-5">
+        <h2>React Danışmanlık ve Koçluk Merkezi </h2>
+      <p> insanların hayatlarına küçük dokunuşlarda bulunarak farklılıklar yaratabilen, sorun ortaya çıktığında değil, sorunlar ortaya çıkmadan yol gösteren, kolaylaştıran ve destekleyen uzmanlara ihtiyaç duyulmaktadır. Hem istenmeyen kimi alışkanlıkları tek etmede hem de arzulanan kimi yeni alışkanlıkları edinmede, hedef belirleme ve motivasyonun sağlanmasında, bununla birlikte motivasyon düzeyinin belirli bir ölçüde kalmasını sağlamakta önemli roller üstlenerek yol göstermek yerine yoldaşlık yapan deneyimli ve tecrübeli kadromuzla her an yanınızdayız.</p>
+      <div class="contact-btn text-center mt-5"><button type="button" class="btn  text-center pt-sm-1 p-2 px-3"><a href="https://wa.me/905395080068" target="_blank" class="text-white">Bizimle İletişime Geçin</a></button></div>
+    </div>
+    <div class="col-md-5 pt-5 ">
+      <img src="images/danısman1.jpg" alt="danısman" class=" border img-fluid main-table-img">
+    </div>
+    </div>
+    <div class="row align-items-center mt-150">
+        <div class="col" >
+          <img src="images/pensil2.jpg" alt="building" class=" border img-fluid main-table-pencil">
+        </div>
+        <div class="col">
+          <p class="different-life text-center">Hayat Farklılıklarımızla Güzel</p>
+          <p  class="different-life text-center text-danger fw-bold">KEŞFET!!!</p>
+        </div>
+    </div>
+    </div>
+   </section>
+
+  <section class="director " id="director-1">
+     <div>
+      <div class="text-center director-per">
+      <h2 class="text-center p-5 baslik">React Danışmanlık</h2>
+    <div class="row">
+      <div class="col-md-6">
+          <div class="team-image">
+          <img src="images/akdere1.jpg" alt="director on compoter" class="akdere rounded-3 img-fluid pt-3">
+          <div class="search-icon"><a href="https://wa.me/905395080068" target="_blank" class="link"><i class="fa-solid fa-3x fa-calendar-check text-dark"></i></a></div>
+          </div>
+         <h3 class="mt-4">
+          Psikolojik Danışman ve Rehberlik Uzmanı<br>
+          Menderes AKDERE
+         </h3>
+    </div>
+     <div class="col-md-6">
+      <div class="about-our mt-3">
+      <h4 class="fw-bold fs-4 text-center">İş Uzmanlığımız<br> Size Büyük Bir Değer Sağlar</h4>
+      <p class="mt-4 about-our-p">
+  İşini severek yapan ve hayatın değerli olduğuna inanarak yaşayan insanlarız.
+  Aslında tüm hikaye bu...<br>
+
+  Bize sunulmuş en büyük nimet olan bu hayat birbirinden farklı renkler ve keşiflerle dolu bir yolculuk olduğuna inanıyoruz. <br>
+  Bu yolculuk hem bir yandan tekrarı mümkün olamayacak kadar benzersizken diğer yandan tüm yolcuların ister istemez aşina olduğu
+  duraklarla dolu… Bu yolculukta kimi zaman aynı yokuşu çıkıp aynı ağacın altında soluklanıyoruz,
+  kimi zaman aynı soğuk suyun içinden geçiyor, aynı kızgın kuma basıyoruz. 
+  Ama gel gör ki ne suda eşit derecede üşüyor ne de kumda aynı acıyla yanıyoruz. 
+  Yolculuğumuz ortak ama karşılaştığımız her olayda her birimiz için ayrı sonuçlar doğuyor.<br>
+  Tamamen eşit değiliz yürüdüğümüz bu yolda..<br>
+  Herkes kendi penceresinden bakıyor hayata.. <br>
+  Bizim amacımız hayatınıza farklı pencereler açmak, dünyanın farklı güzelliklerine yelken açmanızı sağlamak..<br>Farkedeceksiniz ki güneş aynı güneş ama manzara her pencereden farklı güzel, senin gördüğünden başka dünyalarda varmış, senin kurduğundan farklı hülyalarda...<br>
+  Hayatı keşfetmek için seni davet ediyoruz...
+      </p>
+      <div class="row mt-lg-3 ">
+        <div class="col-md-4">
+          &nbsp;
+        </div>
+        <div class="col-md-8">
+          <img src="images/imza.png" alt="founder imza" class="img-fluid imza">
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row mt-150">
+      <h2 class="text-center baslik mb-2">Sizin İçin Seçtiklerimiz</h2>
+      <div class="col-md-4">
+        <div class="text-center">
+        <a href="https://youtu.be/N3FS9mRLFG4" target="_blank"><h4>Evde Nasıl Ders Çalışılır</h4> </a>
+          <p>
+            Videoda bahsedilen konular ders çalışma ağırlıklı ve proje çalışma konularında da bilgiler veriyor. Nasıl ders çalışabilirim, ders çalışma yöntemleri, ders çalışma taktikleri, pomodora tekniği, feynman tekniği, kırmızı ağaç tekniği, öğreterek öğrenme, anlayarak öğrenme, hızlı öğrenme, not tutma gibi konuları da açmış olduk. Evde ders çalışırken sıkılıyorsanız, zorlanıyorsanız, canınız sıkılıyorsan, nasıl çalışılır ya da ders çalışmaya başlayamıyorum gibi sorularınıza cevap arıyorsanız videoyu izleyebilirsiniz. Ders hakkındaki tüm sorularınıza cevap bulabilirsiniz. İyi ders anlatan öğretmen, güzel ders anlatan öğretmen lere de fikir vermiş olduk. 
+          </p>
+        </div>
+      </div>
+     
+    <div class="col-md-8 text-center our-team">
+      <h2 >React Danışmanlık</h2>
+      <p class="mb-5">Yılların birikiminden damıtılmış, tecrübe edilmiş ilkelerle geleceğe ışık tutuyor</p>
+     
+      <div class="owl-carousel">
+
+        <div class="team-member">
+          <div class="team-info">
+            <a href="https://youtu.be/a_PSs_FKCO4" target="_blank"><h4>Yeni Alışkanlıklar</h4></a>
+           
+            <p>Size hayatınıza renk katabileceğiniz belki sıkıldığınız rutinlerden kurtulup gününüze enerji, farklılık uzun vadede de hayatınıza kalite katabileceğiniz öneriler sunuyor.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-info">
+            <a href="https://youtu.be/WONZal4y60k" target="_blank"><h4>Girişkenlik</h4></a>
+            
+            <p>Girişken, kendinden emin bir insan olmak için neleri değiştirmek gerektiği konusunda farkındalık kazanmak için öneriler sunuluyor.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-info">
+            <a href="https://youtu.be/eHUtZT0VniY" target="_blank"><h4>Aşırı Düşünmek</h4></a>
+            
+            <p>Aşırı düşünmekten nasıl kurtulursun?Zamanla dozunun artmasıyla yorucu bir eyleme dönüşen aşırı düşünme hakkında fikirler sunuyor.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-info">
+            <a href="https://youtu.be/j01DgDvv-hY" target="_blank"> <h4>Özgüven</h4></a>
+           
+            <p>Özgüveniniz toplumsal yaşam kalıpları içinde nasıl yok oluyor. Siz özgüveninizi yeniden nasıl kazanırsınız?Vb konular hakkında eğlenceli anlatımıyla fikirler sunuyor.</p>
+          </div>
+        </div> 
+         </div> <!--end of carousel -->
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+   <section class="consultancy-produc animated fadeInUp" id="consultancy-1">
+    <div class="container">
+    <h1 class="text-center mb-4 pt-5 baslik">
+       Hizmetlerimiz
+    </h1>
+    
+    <div class="row pt-3">
+     <div class="col-4">
+    
+          <img src="images/yeni2.jpg" alt="bireysel terapi" class="img-fluid">
+          <p>Çocuk ve Ergen Terapisi</p>
+     </div>
+     <div class="col-4">
+          <img src="images/yeni6.jpg" alt="bireysel terapi" class="img-fluid">
+          <p>Sınav Danışmanlığı</p>
+     </div>
+     <div class="col-4">
+      <img src="images/yeni5.jpg" alt="bireysel terapi" class="img-fluid">
+      <p>Hiperaktivite</p>
+    </div>  
+    </div>
+    <div class="row mt-5">
+      <div class="col-4">
+           <img src="images/yeni12.jpg" alt="bireysel terapi" class="img-fluid">
+           <p>Öğrenme Güçlüğü</p>
+      </div>
+      <div class="col-4">
+           <img src="images/yeni10.jpg" alt="bireysel terapi" class="img-fluid">
+           <p>Dikkat Eksikliği</p>
+      </div>
+      <div class="col-4">
+           <img src="images/yeni9.jpg" alt="bireysel terapi" class="img-fluid">
+           <p>Zeka Testleri</p>
+      </div>
+       
+     </div>
+    </div>
+   </section>
+   
+   <article class="mt-150">
+    <div class="container">
+      <h2 class="text-center baslik">Sık Sorulan Sorular </h2>
+<div class="accordion mt-5" id="accordionExample">
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      Psikolojik Danışmanlar Ne Yapar?
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <strong>Psikolojik danışmanlar</strong>, özellikle gelişme çağında olan öğrencilerin mental gelişimleri konusunda onlara yol gösterici olarak sahip oldukları psikolojik sıkıntıları yenmelerinde yardımcı olurlar.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    Psilolog Mu Daha İyi Psikiyatrist Mi?
+    </button>
+  </h2>
+  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <strong>Psikiyatristler</strong>, insan fizyolojisine daha hâkim olurlar. Bu nedenle sorunlara medikal çözümler üretmeyi tercih ederler. Başka bir deyişle ilaç ile tedavi yöntemini uygularlar. Psikologlar ise insanın ruhsal, düşünsel ve davranışsal durumlarına daha çok hâkim olurlar.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+     Kaygı Bozukluğu İçin Psikolog Mu Psikiyatrist Mi?
+    </button>
+  </h2>
+  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <strong>Düşüncelerimiz beyinde oluşmaz</strong>, duygularımızın sonucunda oluşur. Bastırılan duygu ve dürtüler ise bir süre sonra patlar ve bir hastalık olarak yani OKB olarak ortaya çıkar. Bu nedenle de OKB alanında uzman bir psikolog ve aynı zaman da psikanalitik psikoterapi çalışan bir psikoterapiste başvurulmalıdır.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFour">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+    Aile Danışmanı Ne İş Yapar?
+    </button>
+  </h2>
+  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <strong>Aile Danışmanlığı</strong>, aileyi oluşturan bireylerin birbirleriyle olan ilişkileri yaşadıkları sorunlar, sorun çözme, evlilik, ayrılık ve boşanma sırasında çocuklarla ve aile ile ilgili bireysel ya da bireyler arasındaki sorunların üstesinden gelinmesine yardımcı olan bir danışmanlık hizmetidir.
+    </div>
+  </div>
+</div>
+</div>
+</div>
+   </article>
+
+   <footer id="contact">
+    <div class="footer-bg">                 <!-- footer 1. bölüm -->
+    <div class="container  pt-5 pb-4">
+      <div class="text-center baslik pb-5">İletişim</div>
+      <div class="row">
+       <div class="col-lg-6"> 
+          <p class="ps-4 fw-bold">İLETİŞİM</p>
+          <ul >
+            <li> <address><i class="fa-solid fa-building pe-3"></i>  Taşpazarı Mah. 108. Sokak Merkez/AKSARAY</address></li>
+            <li ><i class="fa-solid fa-headset pe-3"></i>  +9 0539 508 00 68</li>
+            <li><i class="fa-solid fa-envelope pe-3"></i>  info@reactdanismanlik.com</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d50040.00674462081!2d33.869004323838695!3d38.38367697209808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m1!2zMTAwbSBrYXLFn8Sxc8Sx!4m4!1s0x14d67182390a4703%3A0x6d2a6a9b7c26c5c9!3m2!1d38.3836149!2d33.904023699999996!5e0!3m2!1str!2str!4v1669758804130!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-end pt-2 pb-2">        <!--Footer 2. Bölüm-->
+      <div class="container">
+      <div class="row  pb-4 pt-4 text-white">
+        <div class="col ps-1">
+         <span class="fs-5"> © </span> 2022 React Danışmanlık 
+        </div>
+        <div class="col text-end pe-1">
+          <a href="#" class="ps-2"><i class="fa-brands fa-facebook-f text-white"></i></a>
+          <a href="#" class="ps-2"><i class="fa-brands fa-linkedin-in text-white"></i></a>
+          <a href="#" class="ps-2"><i class="fa-brands fa-twitter text-white"></i></a>
+          <a href="#" class="ps-2"><i class="fa-brands fa-instagram text-white"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+<script src="assets/js/jquery-1.11.2.min.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script>
+ new WOW().init();
+ </script>
+
+<script>
+
+document.addEventListener("load",zamanla());
+  var myInterval;
+  function zamanla(){
+    myInterval = setInterval( ()=>{
+      nextSlide();
+    },5000)
+  }
+
+  var slides = document.querySelectorAll("#slider ul li.slide");
+
+  function aktifBul(){
+    var gecerliSlide =0;
+    for(let sl in slides){
+      if(Number(sl)){
+        if(slides[sl].classList.contains("active")){
+          gecerliSlide = sl;
+        }
+      }
+    }
+    return gecerliSlide;
+  }
+
+  function previousSlide(){
+    var slideno = aktifBul();
+    slideno==0 ? slideno=slides.length-1 : slideno--;
+    showSlide(slideno);
+    clearInterval(myInterval);
+    zamanla();
+  }
+
+  function nextSlide(){
+    var slideno = aktifBul();
+   slideno==slides.length-1 ?  slideno=0  : slideno++;
+    showSlide(slideno);
+    clearInterval(myInterval);
+    zamanla();
+  }
+
+  function showSlide(slaytno){
+    var slideno = aktifBul();
+    slides[slideno].classList.remove("active");
+    slides[slaytno].classList.add("active");
+  }
+
+
+  $('.owl-carousel').owlCarousel({
+loop:true,
+margin:30,
+// nav:true,
+// slideTransition:'linear',
+// dots:false,
+// freeDrag:true,
+//autoplay:true,
+//autoplayTimeout:2000,//milisaniye cinsinden değer yaz
+responsive:{
+  0:{
+      items:1
+  },
+  600:{
+      items:2
+  },
+  800:{
+      items:3
+  }
+}
+
+});
+
+</script>
+</body>
+</html>
